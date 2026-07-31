@@ -43,6 +43,28 @@ pip3 install -r requirements.txt
 - 任务命令和定时参考看 [TASKS.md](TASKS.md)
 - 第一次部署建议先手动跑一遍，确认账号、代理和通知都正常
 
+## 拉取和更新
+
+直接在青龙容器里用 Git 最简单。
+
+第一次拉取：
+
+```bash
+git clone --depth 1 https://github.com/wq26888/wq268-ql-scripts.git /ql/data/scripts/wq268-ql-scripts
+```
+
+以后更新：
+
+```bash
+git -C /ql/data/scripts/wq268-ql-scripts pull --ff-only
+```
+
+更新命令可以直接建成青龙定时任务。已经在“订阅管理”里添加仓库的，不用再建更新任务，仓库地址填：
+
+```text
+https://github.com/wq26888/wq268-ql-scripts.git
+```
+
 ## 说明
 
 上游脚本仍按各自原来的许可使用，许可副本放在 `licenses/`。根目录的 [LICENSE](LICENSE) 只管我后来补的代码、修改和文档。
