@@ -3,14 +3,14 @@
 """
 iKuuu 签到
 
-上游整理版：
+我拿到的版本：
 https://github.com/agluo/ql-script-hub/blob/master/ikuuu_checkin.py
 
-原始项目：
+更早的原版：
 https://github.com/bighammer-link/jichang_dailycheckin
 
-当前版本增加 Cookie 登录、可配置域名、公共通知和兼容性处理。
-上游项目采用 MIT License，详细归属见仓库 SOURCES.md。
+这边主要加了 Cookie 登录、可修改域名、公共通知和登录兼容处理。
+两个上游仓库都是 MIT License，详情见 SOURCES.md。
 """
 
 import os

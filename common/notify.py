@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-本仓库维护的公共通知模块。
-
-从现有脚本中的 Bark、Telegram 通知逻辑抽取并重新整理，
-支持 URL 编码和公共代理配置。许可范围见仓库 LICENSE。
+几个脚本共用的通知模块。
+把原来分散的 Bark、Telegram 推送合到一起，顺便加了 URL 编码和代理。
 """
 
 import os

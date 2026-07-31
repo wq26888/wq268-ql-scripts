@@ -11,8 +11,8 @@ Update: 2023/7/27
 Upstream:
 https://github.com/RaineaAN/GlaDOS_Checkin_ql
 
-当前版本更新服务域名、接口返回解析并接入公共通知模块。
-上游项目采用 Apache License 2.0，详细归属见仓库 SOURCES.md。
+这边改了新的服务域名、接口返回内容和公共通知。
+上游使用 Apache License 2.0。
 """
 
 

@@ -5,8 +5,7 @@ new Env('夸克签到')
 来源：
 https://github.com/agluo/ql-script-hub/blob/master/quark_signin.py
 
-当前版本接入仓库公共通知模块。
-上游项目采用 MIT License，详细归属见仓库 SOURCES.md。
+这边只接了仓库共用的通知模块。上游是 MIT License。
 """
 import os
 import re

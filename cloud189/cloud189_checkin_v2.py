@@ -7,14 +7,14 @@ new Env('天翼云盘签到')
 
 版本：ty_netdisk_checkin_fixed_20260527_7
 
-上游整理版：
+最初使用的版本：
 https://github.com/agluo/ql-script-hub/blob/master/ty_netdisk_checkin.py
 
-上游文件注明早期实现来自：
+它的文件头还提到了：
 https://www.52pojie.cn/thread-1231190-1-1.html
 
-当前版本基于旧版实现大幅重构，重新适配 2026 年登录认证、
-参数解析、多账号运行、异常处理和公共通知。详细归属见仓库 SOURCES.md。
+旧登录流程失效后，这版重新适配了 2026 年的登录认证、页面参数、
+多账号、报错和公共通知。改动比较大，但还保留了旧版的基础结构。
 """
 
 import time
