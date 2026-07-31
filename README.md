@@ -44,5 +44,3 @@ pip3 install -r requirements.txt
 ## 说明
 
 上游脚本仍按各自原来的许可使用，许可副本放在 `licenses/`。根目录的 [LICENSE](LICENSE) 只管我后来补的代码、修改和文档。
-
-仓库里不放账号、密码、Cookie、token、推送 key、青龙数据库、日志和缓存。
