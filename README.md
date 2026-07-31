@@ -43,9 +43,37 @@ pip3 install -r requirements.txt
 - 任务命令和定时参考看 [TASKS.md](TASKS.md)
 - 第一次部署建议先手动跑一遍，确认账号、代理和通知都正常
 
-## 拉取和更新
+## 青龙订阅
 
-直接在青龙容器里用 Git 最简单。
+在青龙的“订阅管理”里新建订阅：
+
+```text
+名称：wq268-ql-scripts
+类型：公开仓库
+地址：https://github.com/wq26888/wq268-ql-scripts.git
+分支：main
+定时：17 4 * * *
+白名单：^(69yun/69yun_checkin|ikuuu/ikuuu_checkin|quark/quark_signin|cloud189/cloud189_checkin_v2|glados/checkin)\.py$
+黑名单：留空
+依赖文件：^common/notify\.py$
+文件后缀：py
+自动添加任务：开启
+自动删除任务：开启
+```
+
+这样 `common/notify.py` 只会作为公共依赖复制，不会单独生成一个通知任务。第一次运行订阅后，到定时任务里检查一下生成的五个签到任务。
+
+旧版青龙如果支持 `ql repo` 命令，也可以执行：
+
+```bash
+ql repo "https://github.com/wq26888/wq268-ql-scripts.git" "^(69yun/69yun_checkin|ikuuu/ikuuu_checkin|quark/quark_signin|cloud189/cloud189_checkin_v2|glados/checkin)\.py$" "" "^common/notify\.py$" "main" "py" "" "true" "true"
+```
+
+部分新版青龙只在面板里管理订阅，终端里没有 `ql` 命令，按上面的字段填写即可。
+
+## 手动拉取
+
+不使用订阅管理时，也可以直接用 Git。
 
 第一次拉取：
 
@@ -59,11 +87,7 @@ git clone --depth 1 https://github.com/wq26888/wq268-ql-scripts.git /ql/data/scr
 git -C /ql/data/scripts/wq268-ql-scripts pull --ff-only
 ```
 
-更新命令可以直接建成青龙定时任务。已经在“订阅管理”里添加仓库的，不用再建更新任务，仓库地址填：
-
-```text
-https://github.com/wq26888/wq268-ql-scripts.git
-```
+更新命令可以直接建成青龙定时任务。已经在“订阅管理”里添加仓库的，不用再建更新任务。
 
 ## 说明
 

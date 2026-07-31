@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+cron "0 10 * * *"
+new Env('69云签到')
+
 69yun_multi_checkin.py
 
 这是很早以前保存下来的通用机场签到脚本，原出处已经找不到了。

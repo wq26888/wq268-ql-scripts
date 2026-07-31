@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
+cron "0 21 * * *"
+new Env('iKuuu签到')
+
 iKuuu 签到
 
 我拿到的版本：
