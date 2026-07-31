@@ -1,0 +1,51 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Dependencies and virtual environments
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+
+# Qinglong and runtime data
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.tgz
+*.tar.gz
+*.zip
+*.7z
+*.rar
+*.pcap
+*.pcapng
+*.har
+*_token_cache.json
+.env
+.env.*
+!.env.example
+
+# Credentials and exported browser data
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+cookies*.txt
+
+# Private projects and captured data
+/psbc/
+/private/
+/backups/
+/capture_*/
+/repo_prep_extract/
+
+# Local editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary backups
+*.bak
+*.bak2
+*.codexbak
