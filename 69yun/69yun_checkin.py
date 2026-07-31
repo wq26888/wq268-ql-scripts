@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-cron "0 10 * * *"
+cron "0 10 * * *" script-path=69yun_checkin.py,tag=69云签到
 new Env('69云签到')
 
 69yun_multi_checkin.py

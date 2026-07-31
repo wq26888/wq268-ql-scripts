@@ -63,6 +63,8 @@ pip3 install -r requirements.txt
 
 这样 `common/notify.py` 只会作为公共依赖复制，不会单独生成一个通知任务。第一次运行订阅后，到定时任务里检查一下生成的五个签到任务。
 
+订阅生成的脚本目录由青龙按仓库信息命名，当前通常是 `wq26888_wq268-ql-scripts_main/`，不用手动填写任务路径。
+
 旧版青龙如果支持 `ql repo` 命令，也可以执行：
 
 ```bash

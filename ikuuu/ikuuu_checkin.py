@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-cron "0 21 * * *"
+cron "0 21 * * *" script-path=ikuuu_checkin.py,tag=iKuuu签到
 new Env('iKuuu签到')
 
 iKuuu 签到
