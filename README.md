@@ -1,5 +1,7 @@
 # wq268-ql-scripts
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 这是我自己在青龙里跑的几个签到脚本。
 
 脚本大多是以前从网上找来的。原版有些已经失效，有些放进青龙后不太好用，所以这些年陆续修过域名、登录流程、多账号、代理和通知。放到 GitHub 主要是给自己留个备份，换机器时也省得重新整理。
